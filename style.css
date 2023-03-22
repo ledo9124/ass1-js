@@ -1,0 +1,170 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#container {
+    max-width: 1440px;
+    display: block;
+    margin: 0 auto;
+}
+
+.header {
+    min-height: 46px;
+    background-image: linear-gradient(to left , #40e0d0 ,  #ff8c00 , #ff0080);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+    margin-bottom: 24px;
+}
+
+.header .nav {
+    display: flex;
+    list-style: none;
+}
+
+.nav a {
+    text-decoration: none;
+    padding: 0 20px;
+    line-height: 46px;
+    display: inline-block;
+    color: #000;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 4px;
+}
+
+.nav li:hover a {
+    transition: all linear .2s;
+    background-image: linear-gradient(to left , #108dc7, #ef8e38);
+    border-radius: 4px;
+    box-shadow: 0 0 5px #000;
+}
+
+.header-search {
+    padding: 0 36px;
+}
+
+.header-search input {
+    min-height: 24px;
+    min-width: 200px;
+    border-radius: 8px;
+    border: none;
+    margin: 0 16px;
+}
+
+.header-search button {
+    min-height: 24px;
+    min-width: 75px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+.banner img {
+    width: 100%;
+}
+
+.list-Courses {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 12px;
+    padding: 20px 0;
+}
+
+.box-course img {
+    border-radius: 12px;
+    width: 100%;
+}
+
+.box-course button {
+    float: right;
+    margin-top: 8px;
+    min-width: 75px;
+    min-height: 32px;
+    cursor: pointer;
+    border-radius: 8px;
+    border: none;
+    background-image: linear-gradient(to left , #ff9966, #ff5e62 ,#ff9966);
+    font-weight: 600;
+}
+
+.overlay{
+    display: none;
+    position: fixed;
+    right: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.hiden-form {
+    display: none;
+}
+
+.box-form {
+    position: fixed;
+    top: 35%;
+    left: 35%;
+    width: 500px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to left bottom,#12c2e9, #c471ed, #f64f59);
+    border-radius: 8px;
+}
+
+.box-form label,
+.box-form h1 {
+    font-weight: 600;
+    color: #fff;
+}
+
+.box-form-dk {
+    display: flex;
+    flex-direction: column;
+}
+
+.box-form-dk .Usename,
+.box-form-dk .Password{
+    padding: 8px;
+}
+
+.box-form-dk select,
+.box-form-dk .Password,
+.box-form-dk .Usename{
+    height: 28px;
+    width: 240px;
+    border-radius: 8px;
+    border: 1px solid #eee;
+    font-weight: 600;
+}
+
+.box-form-dk select:focus,
+.box-form-dk .Password:focus,
+.box-form-dk select:focus {
+    border-color: #f64f59;
+}
+
+.form-dk {
+    height: 36px;
+    width: 123px;
+    border-radius: 8px;
+    margin: 0 auto;
+    cursor: pointer;
+    background-image: linear-gradient(to left bottom, #009fff, #ec2f4b);
+    border: none;
+}
+
+
+
