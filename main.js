@@ -18,3 +18,8 @@ overlayElement.addEventListener('click' , function(e){
     overlayElement.style.display = 'none'; 
     hidenElement.style.display = 'none'; 
 })
+
+var btnForm = document.querySelector('.form-dk');
+btnForm.addEventListener('click' , function (e) {
+    alert('Đăng ký thành công!!!');
+})

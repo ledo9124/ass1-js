@@ -112,7 +112,7 @@ body {
 
 .box-form {
     position: fixed;
-    top: 35%;
+    top: 30%;
     left: 35%;
     width: 500px;
     height: 350px;
@@ -151,12 +151,6 @@ body {
     font-weight: 600;
 }
 
-.box-form-dk select:focus,
-.box-form-dk .Password:focus,
-.box-form-dk select:focus {
-    border-color: #f64f59;
-}
-
 .form-dk {
     height: 36px;
     width: 123px;
@@ -165,6 +159,12 @@ body {
     cursor: pointer;
     background-image: linear-gradient(to left bottom, #009fff, #ec2f4b);
     border: none;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.form-dk:hover {
+    background-image: linear-gradient(to right top, #009fff, #ec2f4b);
 }
 
 @keyframes modalFadeIn {
@@ -178,4 +178,51 @@ body {
     }
 }
 
+
+/* Giới Thiệu */
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 4px;
+}
+
+.content .course {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px #eee;
+}
+
+.content .img-course {
+    display: grid;
+    grid-template-columns: .9fr 1fr;
+    gap: 8px;
+}
+
+.content .course img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.course h2{
+    padding: 20px;
+}
+
+.course .list-info {
+    list-style: none;
+}
+
+.list-info li {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    grid-auto-rows: minmax(40px, auto);
+}
+
+.course button {
+    width: 215px;
+    height: 50px;
+    font-size: 24px;
+}
 
